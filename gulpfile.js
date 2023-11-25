@@ -61,8 +61,6 @@ const styles = () => {
 
 exports.styles = styles;
 
-exports.styles = styles;
-
 // HTML
 
 const html = () => {
