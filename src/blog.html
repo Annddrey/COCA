@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="ico" href="favicon.ico" />
+    <title>COCA</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wraper">
+            <img
+              class="page-header__logo"
+              width="112"
+              height="52"
+              src="img/logo.svg"
+              alt="Логотип сайта"
+            />
+          </div>
+        </div>
+
+        <nav class="page-header__nav">
+          <button class="page-header__button-nav">
+            <span class="visually-hidden">Включатель навигации</span>
+          </button>
+
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="page-header__item page-header__item--current">
+              <a href="">About</a>
+            </li>
+            <li class="page-header__item"><a href="#">Blog</a></li>
+            <li class="page-header__item"><a href="#">Pricing</a></li>
+            <li class="page-header__item"><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="section promo-blog">
+        <div class="wrapper">
+          <h2 class="section__title">Activity & Updates</h2>
+          <p class="section__text">
+            Our biggest challenge is making sure we're always designing and
+            building products that will help you run your business better.
+          </p>
+
+          <div class="promo-blog__filter-wrapper">
+            <form class="promo-blog__filter" action="">
+              <div class="promo-blog__filter-item">
+                <label for="all">View all</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="all"
+                  checked
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="design">Design</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="design"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="articles">Articles</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="articles"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="product">Product</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="product"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="software-dev">Software Development</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="software-dev"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="sustomer-success">Customer Success</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="sustomer-success"
+                />
+              </div>
+            </form>
+
+            <div class="promo-blog__articles">
+              <button class="scroll-button article__scroll-button">
+                <span class="visually-hidden">Next article</span>
+              </button>
+
+              <article class="promo-blog__article article">
+                <h3 class="article__title">Practice making User Flow</h3>
+
+                <a href="#" class="article__link">
+                  <figure>
+                    <img class="article__image" src="#" alt="" />
+
+                    <figcaption>
+                      <span class="article__data">
+                        Published in Insight Jan 30, 2021
+                      </span>
+                      <span class="article__author"></span>
+                    </figcaption>
+                  </figure>
+                </a>
+
+                <p class="article__text">
+                  In this article, we'll cover how to create user flows
+                </p>
+              </article>
+
+              <article class="promo-blog__article article">
+                <h3 class="article__title">
+                  Overview of the Design Principles
+                </h3>
+
+                <a href="#" class="article__link">
+                  <figure>
+                    <img class="article__image" src="#" alt="" />
+
+                    <figcaption>
+                      <span class="article__data">
+                        Published in Insight Jan 30, 2021
+                      </span>
+                      <span class="article__author">by : Albert Sans</span>
+                    </figcaption>
+                  </figure>
+                </a>
+
+                <p class="article__text">
+                  What are Design Principles?… To understand design principles,
+                  we first discuss the principles.
+                </p>
+              </article>
+
+              <article class="promo-blog__article article">
+                <h3 class="article__title">Using Grid in website design</h3>
+
+                <a href="#" class="article__link">
+                  <figure>
+                    <img class="article__image" src="#" alt="" />
+
+                    <figcaption>
+                      <span class="article__data">
+                        Published in Insight Jan 30, 2021
+                      </span>
+                      <span class="article__author">by : Albert Sans</span>
+                    </figcaption>
+                  </figure>
+                </a>
+
+                <p class="article__text">
+                  Andi: "What's the grid like?" Toni: “Like below…”
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrappe">
+        <article class="offer">
+          <h2 class="offer__title">Think beyond the wave</h2>
+          <p class="offer__text">
+            Ask about Sans products, pricing, implementation, or anything else.
+            Our highly trained reps are standing by, ready to help
+          </p>
+
+          <a href="" class="button offer__button">Try for free</a>
+
+          <p class="offer__description">
+            <img class="offer__logo" src="#" alt="" />
+
+            We built an elegant solution. Our team created a fully integrated
+            sales and marketing solution for SMBs
+          </p>
+
+          <div class="offer__list-wrapper">
+            <ul class="offer__list">
+              <li class="offer__item offer__item--has-children">
+                <h3>Company</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">About</a></li>
+                  <li class="offer__item"><a href="#">Pricing</a></li>
+                  <li class="offer__item"><a href="#">Jobs</a></li>
+                  <li class="offer__item"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Product</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Sales Software</a></li>
+                  <li class="offer__item"><a href="#">Marketplace</a></li>
+                  <li class="offer__item">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="offer__item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Discover</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">CRM Comparision</a></li>
+                  <li class="offer__item"><a href="#">Partner Program</a></li>
+                  <li class="offer__item"><a href="#">What is CRM</a></li>
+                  <li class="offer__item"><a href="#">Resource</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Help Center</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Community</a></li>
+                  <li class="offer__item"><a href="#">Knowledge Base</a></li>
+                  <li class="offer__item"><a href="#">Academy</a></li>
+                  <li class="offer__item"><a href="#">Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="">
+                Facebook
+                <use xlink:href="#"></use>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                twitter
+                <use xlink:href="#"></use>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                instagram
+                <use xlink:href="#"></use>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                in
+                <use xlink:href="#"></use>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright-wrapper">
+        <ul class="page-footer__copyright-list">
+          <li class="page-footer__copyright-item">
+            <span>Privacy Policy</span>
+          </li>
+
+          <li class="page-footer__copyright-item">
+            <span>Terms & Conditions</span>
+          </li>
+
+          <li class="page-footer__copyright-item"><span>Support</span></li>
+        </ul>
+      </div>
+
+      <p class="page-footer__copyright">
+        © Copyright 2023, All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
