@@ -35,10 +35,10 @@
 
           <ul class="page-header__list">
             <li class="page-header__item page-header__item--current">
-              <a href="#">Home</a>
+              <a href="">Home</a>
             </li>
-            <li class="page-header__item"><a href="#">About</a></li>
-            <li class="page-header__item"><a href="#">Blog</a></li>
+            <li class="page-header__item"><a href="about.html">About</a></li>
+            <li class="page-header__item"><a href="blog.html">Blog</a></li>
             <li class="page-header__item"><a href="#">Pricing</a></li>
             <li class="page-header__item"><a href="#">Contact Us</a></li>
           </ul>
@@ -76,20 +76,66 @@
           <div class="promo__statistics-wrapper">
             <div class="promo__chart">
               <h3 class="promo__title-statistics">Sales Report</h3>
-              <img
-                class="promo__chart-image"
-                src="#"
-                alt="График со статистикой"
-              />
+
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="img/graph-desktop.webp, img/graph-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/graph-mobail.webp, img/graph-mobail@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="img/graph-desktop.jpg, img/graph-desktop@2x.jpg 2x"
+                />
+                <img
+                  class="promo__chart-image"
+                  width="294"
+                  height="208"
+                  src="img/graph-mobail.jpg"
+                  srcset="img/graph-mobail@2x.jpg 2x"
+                  alt="График со статистикой"
+                />
+              </picture>
             </div>
 
-            <div class="promo__chart">
+            <div class="promo__chart-mini">
               <h3 class="promo__title-statistics">Customer Growth</h3>
-              <img
-                class="promo__chart-growth-image"
-                src="#"
-                alt="График со статистикой"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/graph-mini-desktop.webp,
+                    img/graph-mini-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/graph-mini-mobail.webp,
+                    img/graph-mini-mobail@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/graph-mini-desktop.jpg,
+                    img/graph-mini-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="promo__chart-growth-image"
+                  width="98"
+                  height="82"
+                  src="img/graph-mini-mobail.jpg"
+                  srcset="img/graph-mini-mobail@2x.jpg 2x"
+                  alt="График со статистикой"
+                />
+              </picture>
             </div>
           </div>
 
@@ -167,7 +213,32 @@
 
       <section class="section features">
         <div class="wrapper">
-          <img class="features__image" src="#" alt="Статистика" />
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/features-desktop.webp,
+                img/features-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="img/features-mobail.webp, img/features-mobail@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/features-desktop.jpg, img/features-desktop@2x.jpg 2x"
+            />
+            <img
+              class="features__image"
+              width="335"
+              height="374"
+              src="img/features-mobail.jpg"
+              srcset="img/features-mobail@2x.jpg 2x"
+              alt="Статистика"
+            />
+          </picture>
 
           <h2 class="section__title features__title">
             Passion to increase company revenue up to 85%
@@ -219,7 +290,32 @@
             </div>
           </dl>
 
-          <img class="strength__image" src="#" alt="Сплоченный коллектив" />
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/strength-desktop.webp,
+                img/strength-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="img/strength-mobail.webp, img/strength-mobail@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/strength-desktop.jpg, img/strength-desktop@2x.jpg 2x"
+            />
+
+            <img
+              width="335"
+              height="162"
+              src="img/strength-mobail.jpg"
+              srcset="img/strength-mobail@2x.jpg 2x"
+              alt=""
+            />
+          </picture>
 
           <p class="section__title strength__title">
             Lift your business to new heights with our digital marketing
@@ -233,6 +329,7 @@
           </p>
         </div>
       </section>
+
       <section class="section partners">
         <div class="wrapper">
           <h2 class="visually-hidden">Partners</h2>
@@ -240,15 +337,79 @@
           <p class="section__text partners__text">
             some big companies that we work with, and trust us very much
           </p>
+
           <ul class="partners__list">
-            <li class="partners__item"><img src="#" alt="logo airbnb" /></li>
-            <li class="partners__item"><img src="#" alt="logo amazon" /></li>
-            <li class="partners__item"><img src="#" alt="logo fedEx" /></li>
-            <li class="partners__item"><img src="#" alt="logo microsoft" /></li>
-            <li class="partners__item"><img src="#" alt="logo OYO" /></li>
-            <li class="partners__item"><img src="#" alt="logo walmart" /></li>
-            <li class="partners__item"><img src="#" alt="logo google" /></li>
-            <li class="partners__item"><img src="#" alt="logo OLA" /></li>
+            <li class="partners__item">
+              <img
+                width="75.5"
+                height="23.35"
+                src="img/company-logo-airbnb.svg"
+                alt="logo airbnb"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="75.13"
+                height="23.33"
+                src="img/company-logo-amazon.svg"
+                alt="logo amazon"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="73.44"
+                height="22"
+                src="img/company-logo-fedEx.svg"
+                alt="logo fedEx"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="89"
+                height="19"
+                src="img/company-logo-microsoft.svg"
+                alt="logo microsoft"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="61.42"
+                height="21.44"
+                src="img/company-logo-oyo.svg"
+                alt="logo OYO"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="88.24"
+                height="20.42"
+                src="img/company-logo-walmart.svg"
+                alt="logo walmart"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="69.85"
+                height="23.33"
+                src="img/company-logo-google.svg"
+                alt="logo google"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="71.48"
+                height="24.79"
+                src="img/company-logo-ola.svg"
+                alt="logo OLA"
+              />
+            </li>
           </ul>
         </div>
       </section>
@@ -261,9 +422,50 @@
           </p>
 
           <div class="news__container">
+            <button class="scroll-button news__scroll-button">
+              <span class="visually-hidden">Следующая новость</span>
+            </button>
+
             <article class="news__item news-card">
+              <h3 class="news-card__title">
+                What makes an authentic employee profile, and why does it
+                matter?
+              </h3>
+
               <figure>
-                <img src="#" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/news-1-desktop.webp,
+                      img/news-1-desktopp@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/news-1-mobail.webp,
+                      img/news-1-mobail@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/news-1-desktop.jpg,
+                      img/news-1-desktop@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    width="299"
+                    height="190"
+                    src="img/news-1-mobail.jpg"
+                    srcset="img/news-1-mobail@2x.jpg 2x"
+                    alt=""
+                  />
+                </picture>
+
                 <figcaption>
                   <span class="news-card__data">
                     Published in Insight Jan 30, 2021
@@ -273,13 +475,29 @@
               </figure>
             </article>
 
-            <button class="news__button">
-              <span class="visually-hidden">Следующая новость</span>
-            </button>
-
             <article class="news__item news-card">
+              <h3 class="news-card__title">
+                How to build a Kaylen relationship with a good company
+              </h3>
+
               <figure>
-                <img src="#" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/news-2-desktop.webp,
+                      img/news-2-desktop@2x.webp 2x
+                    "
+                  />
+
+                  <img
+                    width="299"
+                    height="190"
+                    src="img/news-2-desktop.jpg"
+                    srcset="img/news-2-desktop@2x.jpg 2x"
+                    alt=""
+                  />
+                </picture>
                 <figcaption>
                   <span class="news-card__data">
                     Published in Insight Jan 30, 2021
@@ -304,7 +522,7 @@
 
           <article class="reviews__review review">
             <div class="review__container-stars">
-              <span class="review__stars"><img src="#" alt="" /></span>
+              <img width="112" height="16" src="img/reviews-stars.svg" alt="" />
               <span class="review__number-stars">
                 <span class="visually-hidden">rating:</span>5.0
               </span>
@@ -323,12 +541,14 @@
             </div>
           </article>
 
-          <div class="reviews__wrapper-button">
-            <button class="reviews__button reviews__button--furthest">
+          <div class="forward-backward-buttons reviews__buttons">
+            <button
+              class="forward-backward-buttons__button forward-backward-buttons__button--furthest"
+            >
               <span class="visually-hidden">Previous</span>
             </button>
 
-            <button class="reviews__button">
+            <button class="forward-backward-buttons__button">
               <span class="visually-hidden">next</span>
             </button>
           </div>
@@ -348,7 +568,13 @@
           <a href="" class="button offer__button">Try for free</a>
 
           <p class="offer__description">
-            <img class="offer__logo" src="#" alt="" />
+            <img
+              width="95"
+              height="44"
+              class="offer__logo"
+              src="img/logo.svg"
+              alt=""
+            />
 
             We built an elegant solution. Our team created a fully integrated
             sales and marketing solution for SMBs
@@ -409,29 +635,39 @@
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
               <a href="">
-                Facebook
-                <use xlink:href="#"></use>
+                <span class="visually-hidden">Facebook</span>
+
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
               </a>
             </li>
 
             <li class="page-footer__social-item">
               <a href="">
-                twitter
-                <use xlink:href="#"></use>
+                <span class="visually-hidden">twitter</span>
+
+                <svg width="24" hidden="20">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
               </a>
             </li>
 
             <li class="page-footer__social-item">
               <a href="">
-                instagram
-                <use xlink:href="#"></use>
+                <span class="visually-hidden">instagram</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
               </a>
             </li>
 
             <li class="page-footer__social-item">
-              <a href="">
-                in
-                <use xlink:href="#"></use>
+              <a href="#">
+                <span class="visually-hidden">in</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-in"></use>
+                </svg>
               </a>
             </li>
           </ul>

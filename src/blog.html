@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="ico" href="favicon.ico" />
+    <title>COCA</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wraper">
+            <img
+              class="page-header__logo"
+              width="112"
+              height="52"
+              src="img/logo.svg"
+              alt="Логотип сайта"
+            />
+          </div>
+        </div>
+
+        <nav class="page-header__nav">
+          <button class="page-header__button-nav">
+            <span class="visually-hidden">Включатель навигации</span>
+          </button>
+
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="page-header__item page-header__item--current">
+              <a href="about.html">About</a>
+            </li>
+            <li class="page-header__item"><a href="">Blog</a></li>
+            <li class="page-header__item"><a href="#">Pricing</a></li>
+            <li class="page-header__item"><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="section promo-blog">
+        <div class="wrapper">
+          <h2 class="section__title">Activity & Updates</h2>
+          <p class="section__text">
+            Our biggest challenge is making sure we're always designing and
+            building products that will help you run your business better.
+          </p>
+
+          <div class="promo-blog__filter-wrapper">
+            <form class="promo-blog__filter" action="">
+              <div class="promo-blog__filter-item">
+                <label for="all">View all</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="all"
+                  checked
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="design">Design</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="design"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="articles">Articles</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="articles"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="product">Product</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="product"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="software-dev">Software Development</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="software-dev"
+                />
+              </div>
+
+              <div class="promo-blog__filter-item">
+                <label for="sustomer-success">Customer Success</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="filter-promo"
+                  id="sustomer-success"
+                />
+              </div>
+            </form>
+
+            <div class="promo-blog__articles">
+              <button class="scroll-button article__scroll-button">
+                <span class="visually-hidden">Next article</span>
+              </button>
+
+              <div class="promo-blog__articles-wrapper">
+                <article class="promo-blog__article article">
+                  <h3 class="article__title">Practice making User Flow</h3>
+
+                  <a href="#" class="article__link">
+                    <figure>
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/article-promo-1.webp,
+                            img/article-promo-1@2x.webp 2x
+                          "
+                        />
+
+                        <img
+                          width="247"
+                          height="205"
+                          src="img/article-promo-1.jpg"
+                          srcset="img/article-promo-1@2x.jpg 2x"
+                          alt=""
+                        />
+                      </picture>
+
+                      <figcaption>
+                        <span class="article__data">
+                          Published in Insight Jan 30, 2021
+                        </span>
+                        <span class="article__author"></span>
+                      </figcaption>
+                    </figure>
+                  </a>
+
+                  <p class="article__text">
+                    In this article, we'll cover how to create user flows
+                  </p>
+                </article>
+
+                <article class="promo-blog__article article">
+                  <h3 class="article__title">
+                    Overview of the Design Principles
+                  </h3>
+
+                  <a href="#" class="article__link">
+                    <figure>
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/article-promo-2.webp,
+                            img/article-promo-2@2x.webp 2x
+                          "
+                        />
+
+                        <img
+                          width="247"
+                          height="205"
+                          src="img/article-promo-2.jpg"
+                          srcset="img/article-promo-2@2x.jpg 2x"
+                          alt=""
+                        />
+                      </picture>
+
+                      <figcaption>
+                        <span class="article__data">
+                          Published in Insight Jan 30, 2021
+                        </span>
+                        <span class="article__author">by : Albert Sans</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+
+                  <p class="article__text">
+                    What are Design Principles?… To understand design
+                    principles, we first discuss the principles.
+                  </p>
+                </article>
+
+                <article class="promo-blog__article article">
+                  <h3 class="article__title">Using Grid in website design</h3>
+
+                  <a href="#" class="article__link">
+                    <figure>
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/article-promo-3.webp,
+                            img/article-promo-3@2x.webp 2x
+                          "
+                        />
+
+                        <img
+                          width="247"
+                          height="205"
+                          src="img/article-promo-3.jpg"
+                          srcset="img/article-promo-3@2x.jpg 2x"
+                          alt=""
+                        />
+                      </picture>
+
+                      <figcaption>
+                        <span class="article__data">
+                          Published in Insight Jan 30, 2021
+                        </span>
+                        <span class="article__author">by : Albert Sans</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+
+                  <p class="article__text">
+                    Andi: "What's the grid like?" Toni: “Like below…”
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section popular-articles">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Popular articles</h2>
+
+          <article class="popular-articles__article popular-article">
+            <h3 class="popular-article__title">
+              <a href="#" class="popular-article__link">
+                How we perform long-running tasks using AWS services
+              </a>
+            </h3>
+
+            <div class="popular-article__image-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/article-popular-1.webp,
+                    img/article-popular-1@2x.webp 2x
+                  "
+                />
+
+                <img
+                  width="335"
+                  height="430"
+                  src="img/article-popular-1.jpg"
+                  srcset="img/article-popular-1@2x.jpg 2x"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <p class="popular-article__text">
+              Webflow is web design tool as well as a hosting platform and CMS
+              all in one. While you are probably familiar with all of these,
+              they are usually entirely separate tools.
+            </p>
+          </article>
+
+          <article class="popular-articles__article popular-article">
+            <h3 class="popular-article__title">
+              <a href="#" class="popular-article__link">
+                How to ask when doing User Research
+              </a>
+            </h3>
+
+            <div class="popular-article__image-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/article-popular-2.webp,
+                    img/article-popular-2@2x.webp 2x
+                  "
+                />
+
+                <img
+                  width="335"
+                  height="290"
+                  src="img/article-popular-2.jpg"
+                  srcset="img/article-popular-2@2x.jpg 2x"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <p class="popular-article__text">
+              Bro, the story is that you want to make an application for buying
+              and selling goods on the market. During user research, what do you
+              think you will ask people?
+            </p>
+          </article>
+
+          <article class="popular-articles__article popular-article">
+            <h3 class="popular-article__title">
+              <a href="#" class="popular-article__link">
+                Layout Exploration — Simple exercise but big effect
+              </a>
+            </h3>
+
+            <div class="popular-article__image-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/article-popular-3.webp,
+                    img/article-popular-3@2x.webp 2x
+                  "
+                />
+
+                <img
+                  width="335"
+                  height="290"
+                  src="img/article-popular-3.jpg"
+                  srcset="img/article-popular-3@2x.jpg 2x"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <p class="popular-article__text">
+              Make alternatives or other options for the design we are making.
+              For example, we are creating a website design. Then there is the
+              testimonial section.
+            </p>
+          </article>
+
+          <article class="popular-articles__article popular-article">
+            <h3 class="popular-article__title">
+              <a href="#" class="popular-article__link">
+                Webflow Break the Coding Barrier
+              </a>
+            </h3>
+
+            <div class="popular-article__image-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/article-popular-4.webp,
+                    img/article-popular-4@2x.webp 2x
+                  "
+                />
+
+                <img
+                  width="335"
+                  height="430"
+                  src="img/article-popular-4.jpg"
+                  srcset="img/article-popular-4@2x.jpg 2x"
+                  alt=""
+                />
+              </picture>
+            </div>
+
+            <p class="popular-article__text">
+              Webflow is web design tool as well as a hosting platform and CMS
+              all in one. While you are probably familiar with all of these,
+              they are usually entirely separate tools.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section all-articles">
+        <div class="wrapper">
+          <h2 class="section__title">Articles</h2>
+          <p class="section__text">
+            Complex tech decoded by engineers, business trends analyzed by
+            experts.
+          </p>
+
+          <div class="forward-backward-buttons all-articles__buttons">
+            <button
+              class="forward-backward-buttons__button forward-backward-buttons__button--furthest"
+            >
+              <span class="visually-hidden">previous</span>
+            </button>
+
+            <button class="forward-backward-buttons__button">
+              <span class="visually-hidden">next</span>
+            </button>
+          </div>
+
+          <div class="all-articles__articles-wrapper">
+            <article class="all-articles__article article-from-all">
+              <h3 class="article-from-all__title">
+                List of UX Designer Portfolio / Case Studies where you can make
+                money
+              </h3>
+
+              <div class="article-from-all__img-wrapper">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/article-all-1.webp,
+                      img/article-all-1@2x.webp 2x
+                    "
+                  />
+
+                  <img
+                    width="263"
+                    height="374"
+                    src="img/article-all-1.jpg"
+                    srcset="img/article-all-1@2x.jpg 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+
+              <p class="article-from-all__text">
+                Here are some portfolios / Case Studies from UX Designers that
+                you can use as a reference for creating a portfolio. Two
+                interesting things from their portfolio are:
+              </p>
+
+              <a class="button article-from-all__button" href="#">Read More</a>
+            </article>
+
+            <article class="all-articles__article article-from-all">
+              <h3 class="article-from-all__title">
+                Skyrocketing in The Designing Career, Why Not?
+              </h3>
+
+              <div class="article-from-all__img-wrapper">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/article-all-2.webp,
+                      img/article-all-2@2x.webp 2x
+                    "
+                  />
+
+                  <img
+                    width="263"
+                    height="213"
+                    src="img/article-all-2.jpg"
+                    srcset="img/article-all-2@2x.jpg 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+
+              <p class="article-from-all__text">
+                Ever thought of jumping into the world of design as a career? If
+                not, you may want to look at what the word ‘design’ actually
+                means. Design is a method of designing aesthetic actions that
+                are carried out.
+              </p>
+
+              <a class="button article-from-all__button" href="#">Read More</a>
+            </article>
+
+            <article class="all-articles__article article-from-all">
+              <h3 class="article-from-all__title">
+                Elements that may be missed when designing the UI
+              </h3>
+
+              <div class="article-from-all__img-wrapper">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/article-all-3.webp,
+                      img/article-all-2@2x.webp 2x
+                    "
+                  />
+
+                  <img
+                    width="263"
+                    height="411"
+                    src="img/article-all-3.jpg"
+                    srcset="img/article-all-3@2x.jpg 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+
+              <p class="article-from-all__text">
+                This is an article that talks about the little elements that are
+                often overlooked when designing UI.
+              </p>
+
+              <a class="button article-from-all__button" href="#">Read More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrappe">
+        <article class="offer">
+          <h2 class="offer__title">Think beyond the wave</h2>
+          <p class="offer__text">
+            Ask about Sans products, pricing, implementation, or anything else.
+            Our highly trained reps are standing by, ready to help
+          </p>
+
+          <a href="" class="button offer__button">Try for free</a>
+
+          <p class="offer__description">
+            <img
+              width="95"
+              height="44"
+              class="offer__logo"
+              src="img/logo.svg"
+              alt=""
+            />
+
+            We built an elegant solution. Our team created a fully integrated
+            sales and marketing solution for SMBs
+          </p>
+
+          <div class="offer__list-wrapper">
+            <ul class="offer__list">
+              <li class="offer__item offer__item--has-children">
+                <h3>Company</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">About</a></li>
+                  <li class="offer__item"><a href="#">Pricing</a></li>
+                  <li class="offer__item"><a href="#">Jobs</a></li>
+                  <li class="offer__item"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Product</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Sales Software</a></li>
+                  <li class="offer__item"><a href="#">Marketplace</a></li>
+                  <li class="offer__item">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="offer__item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Discover</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">CRM Comparision</a></li>
+                  <li class="offer__item"><a href="#">Partner Program</a></li>
+                  <li class="offer__item"><a href="#">What is CRM</a></li>
+                  <li class="offer__item"><a href="#">Resource</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Help Center</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Community</a></li>
+                  <li class="offer__item"><a href="#">Knowledge Base</a></li>
+                  <li class="offer__item"><a href="#">Academy</a></li>
+                  <li class="offer__item"><a href="#">Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">Facebook</span>
+
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">twitter</span>
+
+                <svg width="24" hidden="20">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">instagram</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="#">
+                <span class="visually-hidden">in</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright-wrapper">
+        <ul class="page-footer__copyright-list">
+          <li class="page-footer__copyright-item">
+            <span>Privacy Policy</span>
+          </li>
+
+          <li class="page-footer__copyright-item">
+            <span>Terms & Conditions</span>
+          </li>
+
+          <li class="page-footer__copyright-item"><span>Support</span></li>
+        </ul>
+      </div>
+
+      <p class="page-footer__copyright">
+        © Copyright 2023, All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>

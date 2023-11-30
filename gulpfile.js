@@ -32,14 +32,9 @@ const FTP = () => {
     'build/**'
   ];
 
-  var local = 'portfolio/**';
-
-
   return gulp.src( globs, { base: 'build/', buffer: false } )
   .pipe( conn.newer( 'www/andreymescherinov.com/portfolio'))
   .pipe( conn.dest( 'www/andreymescherinov.com/portfolio'));
-
-
 }
 
 exports.FTP = FTP;
