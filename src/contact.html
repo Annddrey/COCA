@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="ico" href="favicon.ico" />
+    <title>COCA</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wraper">
+            <img
+              class="page-header__logo"
+              width="112"
+              height="52"
+              src="img/logo.svg"
+              alt="Логотип сайта"
+            />
+          </div>
+        </div>
+
+        <nav class="page-header__nav">
+          <button class="page-header__button-nav">
+            <span class="visually-hidden">Включатель навигации</span>
+          </button>
+
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="page-header__item page-header__item--current">
+              <a href="about.html">About</a>
+            </li>
+            <li class="page-header__item"><a href="blog.html">Blog</a></li>
+            <li class="page-header__item">
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li class="page-header__item"><a href="">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <header class="page-main__header">
+        <h1 class="page-main__title">Contact our team to find out more</h1>
+
+        <div class="page-main__header-map address-map">
+          <div class="address-map__map">
+            <picture>
+              <source
+                type="imgae/webp"
+                srcset="img/map.webp, img/map@2x.webp 2x"
+              />
+
+              <img
+                width="335"
+                height="174"
+                src="img/map.png"
+                srcset="img/map@2x.png"
+                alt="World map with a dot on Australia"
+              />
+            </picture>
+          </div>
+
+          <article class="address-map__map-mark">
+            <address class="address-map__popup">
+              <h3>Yogja, INA</h3>
+              <span class="address-map__popup-adress">
+                100 Smith Street Collingwood VIC 3066 AU
+              </span>
+            </address>
+
+            <span class="address-map__mark"></span>
+          </article>
+        </div>
+      </header>
+
+      <article class="section partners">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Partners</h2>
+          <span class="prtners__heading">890+</span>
+          <p class="section__text">
+            some big companies that we work with, and trust us very much
+          </p>
+
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img
+                width="75.5"
+                height="23.35"
+                src="img/company-logo-airbnb.svg"
+                alt="logo airbnb"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="75.13"
+                height="23.33"
+                src="img/company-logo-amazon.svg"
+                alt="logo amazon"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="73.44"
+                height="22"
+                src="img/company-logo-fedEx.svg"
+                alt="logo fedEx"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="89"
+                height="19"
+                src="img/company-logo-microsoft.svg"
+                alt="logo microsoft"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="61.42"
+                height="21.44"
+                src="img/company-logo-oyo.svg"
+                alt="logo OYO"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="88.24"
+                height="20.42"
+                src="img/company-logo-walmart.svg"
+                alt="logo walmart"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="69.85"
+                height="23.33"
+                src="img/company-logo-google.svg"
+                alt="logo google"
+              />
+            </li>
+
+            <li class="partners__item">
+              <img
+                width="71.48"
+                height="24.79"
+                src="img/company-logo-ola.svg"
+                alt="logo OLA"
+              />
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="contact">
+        <div class="wrapper">
+          <h2 class="contact__title">Let’s level up your brand</h2>
+
+          <p class="contact__text">
+            You can reach us anytime <br />
+            hellosansbrothers@gmail.com
+          </p>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="">
+              <div class="contact-form__field-wrapper">
+                <label for="contact-form-first-name">First name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="contact-form-first-name"
+                  placeholder="First name"
+                />
+              </div>
+
+              <div class="contact-form__field-wrapper">
+                <label for="contact-form-last-name">Last name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="contact-form-last-name"
+                  placeholder="Last name"
+                />
+              </div>
+
+              <div class="contact-form__field-wrapper">
+                <label for="contact-form-email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="contact-form-email"
+                  placeholder="you@company.com"
+                />
+              </div>
+
+              <div class="contact-form__field-wrapper">
+                <div class="contact-form__select-phone">
+                  <select name="select-phone" id="contact-form-select-phone">
+                    <option value="+1">US</option>
+                  </select>
+                </div>
+
+                <label for="contact-form-phone">Phone number</label>
+                <input
+                  type="tell"
+                  name="phone"
+                  id="contact-form-phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="+1 (555) 000-0000"
+                  required
+                />
+              </div>
+
+              <div class="contact-form__field-wrapper">
+                <label for="contact-form-phone">Message</label>
+                <textarea name="message" id="contact-form-message">
+Leave us a message...</textarea
+                >
+              </div>
+
+              <button class="button contact-form__submit" type="submit">
+                Get Started
+              </button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrappe">
+        <article class="offer">
+          <h2 class="offer__title">Think beyond the wave</h2>
+          <p class="offer__text">
+            Ask about Sans products, pricing, implementation, or anything else.
+            Our highly trained reps are standing by, ready to help
+          </p>
+
+          <a href="" class="button offer__button">Try for free</a>
+
+          <p class="offer__description">
+            <img
+              width="95"
+              height="44"
+              class="offer__logo"
+              src="img/logo.svg"
+              alt=""
+            />
+
+            We built an elegant solution. Our team created a fully integrated
+            sales and marketing solution for SMBs
+          </p>
+
+          <div class="offer__list-wrapper">
+            <ul class="offer__list">
+              <li class="offer__item offer__item--has-children">
+                <h3>Company</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">About</a></li>
+                  <li class="offer__item"><a href="#">Pricing</a></li>
+                  <li class="offer__item"><a href="#">Jobs</a></li>
+                  <li class="offer__item"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Product</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Sales Software</a></li>
+                  <li class="offer__item"><a href="#">Marketplace</a></li>
+                  <li class="offer__item">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="offer__item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Discover</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">CRM Comparision</a></li>
+                  <li class="offer__item"><a href="#">Partner Program</a></li>
+                  <li class="offer__item"><a href="#">What is CRM</a></li>
+                  <li class="offer__item"><a href="#">Resource</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Help Center</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Community</a></li>
+                  <li class="offer__item"><a href="#">Knowledge Base</a></li>
+                  <li class="offer__item"><a href="#">Academy</a></li>
+                  <li class="offer__item"><a href="#">Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">Facebook</span>
+
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">twitter</span>
+
+                <svg width="24" hidden="20">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">instagram</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="#">
+                <span class="visually-hidden">in</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright-wrapper">
+        <ul class="page-footer__copyright-list">
+          <li class="page-footer__copyright-item">
+            <span>Privacy Policy</span>
+          </li>
+
+          <li class="page-footer__copyright-item">
+            <span>Terms & Conditions</span>
+          </li>
+
+          <li class="page-footer__copyright-item"><span>Support</span></li>
+        </ul>
+      </div>
+
+      <p class="page-footer__copyright">
+        © Copyright 2023, All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
