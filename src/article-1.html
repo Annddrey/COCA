@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="ico" href="favicon.ico" />
+    <title>COCA</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wraper">
+            <img
+              class="page-header__logo"
+              width="112"
+              height="52"
+              src="img/logo.svg"
+              alt="Логотип сайта"
+            />
+          </div>
+        </div>
+
+        <nav class="page-header__nav">
+          <button class="page-header__button-nav">
+            <span class="visually-hidden">Включатель навигации</span>
+          </button>
+
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="page-header__item page-header__item--current">
+              <a href="about.html">About</a>
+            </li>
+            <li class="page-header__item"><a href="blog.html">Blog</a></li>
+            <li class="page-header__item">
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li class="page-header__item"><a href="">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main article">
+      <div class="wrapper">
+        <div class="article__wrapper">
+          <header class="article__header">
+            <h1 class="article__title">
+              How we perform long-running tasks using AWS services
+            </h1>
+
+            <figure>
+              <figcaption>
+                <div class="article__recent-reader">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/recent-reader.webp,
+                        img/recent-reader@2x.webp 2x
+                      "
+                    />
+
+                    <img
+                      width="32"
+                      height="32"
+                      src="img/recent-reader.jpg"
+                      srcset="img/recent-reader@2x.jpg 2x"
+                      alt="The author of the article"
+                    />
+                  </picture>
+
+                  <span class="article__reader-name">Renee Wells</span>
+                  <span class="article__reader-position">
+                    Product Designer, Quotient
+                  </span>
+                </div>
+
+                <p>read 10 minutes ago, November 10, 2023</p>
+              </figcaption>
+
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/article-promo.webp, img/article-promo@2x.webp 2x"
+                />
+
+                <img
+                  class="article__promo-image"
+                  width="335"
+                  height="194"
+                  src="img/article-promo.jpg"
+                  srcset="img/article-promo@2x.jpg 2x"
+                  alt=""
+                />
+              </picture>
+            </figure>
+          </header>
+
+          <p>
+            Depending on the input, this can result in using a lot of processing
+            power and time. The whole process would take approximately 5 seconds
+            to return a result to the client. Keep in mind we’re talking about 1
+            item, a contact from a contact book. After a while, a new
+            requirement is added. Solution must support companies that manage
+            their contacts organized in files. We agreed to develop a web
+            application that would support upload of dataset files, like .csv.
+            The new web application should support third party integrations.
+            Some of them are the ESP/CRM services, like Mailchimp. User does not
+            need to see the result immediately. System can later notify the user
+            about the result, when the process finishes. This information is the
+            key that we need to leverage on when developing our solution. So
+            here’s how we did it.
+          </p>
+
+          <h2>Initial approach</h2>
+
+          <p>
+            Our initial approach went like this: The web application would read
+            a .csv file line-by-line and submit an array of entries to the
+            backend REST API. Processing is in real time, immediately after the
+            user makes a request for the process to start, he expects a result.
+            Another approach is to apply vertical scaling to AWS architecture.
+            Meaning we used larger, more expensive instances that have more RAM
+            and processing power. This system worked well for smaller datasets,
+            maybe up to 5k entries, but for larger datasets multiple problems
+            arose. This solution is prone to failure due to long request time.
+            Also, because of some 3rd party services that aren’t optimized for
+            large scale loads or they don’t have batch endpoints. 3rd party
+            services also tend to protect their architecture from making a huge
+            bill on their end. The whole process was done in real-time. The
+            request can take a lot of time hanging in there while the backend
+            would do all the work and return the result to the client. The
+            request was limited to 300 seconds (at time of writing the article)
+            before AWS would cancel it… Also I need to mention that the user has
+            to wait a few minutes to see the results. They can’t use the app
+            during the process, which makes for a bad user experience.
+          </p>
+        </div>
+
+        <article class="article__author">
+          <span class="article__written-by">Written by</span>
+          <h3 class="article__author-name">Renee Wells</h3>
+          <span class="article__author-position">
+            Product Designer, Quotient
+          </span>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/author-image.webp, img/author-image@2x.webp 2x"
+            />
+
+            <img
+              width="200"
+              height="200"
+              src="img/author-image.jpg"
+              srcset="img/author-image@2x.jpg 2x"
+              alt="author"
+            />
+          </picture>
+
+          <p class="article__about-author">
+            Skilled in React Native, iOS and backend, Toni has a demonstrated
+            knowledge of the information technology and services industry, with
+            plenty of hands-on experience to back it up.
+          </p>
+
+          <div class="article__socials-wrapper">
+            <p class="article__share-article">Share this article</p>
+
+            <ul class="articler__socials-list">
+              <li class="article__socials-item">
+                <a href="">
+                  <span class="visually-hidden">Facebook</span>
+
+                  <svg width="24" hidden="24">
+                    <use xlink:href="img/sprite.svg#social-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="article__socials-item">
+                <a href="">
+                  <span class="visually-hidden">twitter</span>
+
+                  <svg width="24" hidden="20">
+                    <use xlink:href="img/sprite.svg#social-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="article__socials-item">
+                <a href="">
+                  <span class="visually-hidden">instagram</span>
+                  <svg width="24" hidden="24">
+                    <use xlink:href="img/sprite.svg#social-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="article__socials-item">
+                <a href="#">
+                  <span class="visually-hidden">in</span>
+                  <svg width="24" hidden="24">
+                    <use xlink:href="img/sprite.svg#social-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrappe">
+        <article class="offer">
+          <h2 class="offer__title">Think beyond the wave</h2>
+          <p class="offer__text">
+            Ask about Sans products, pricing, implementation, or anything else.
+            Our highly trained reps are standing by, ready to help
+          </p>
+
+          <a href="" class="button offer__button">Try for free</a>
+
+          <p class="offer__description">
+            <img
+              width="95"
+              height="44"
+              class="offer__logo"
+              src="img/logo.svg"
+              alt=""
+            />
+
+            We built an elegant solution. Our team created a fully integrated
+            sales and marketing solution for SMBs
+          </p>
+
+          <div class="offer__list-wrapper">
+            <ul class="offer__list">
+              <li class="offer__item offer__item--has-children">
+                <h3>Company</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">About</a></li>
+                  <li class="offer__item"><a href="#">Pricing</a></li>
+                  <li class="offer__item"><a href="#">Jobs</a></li>
+                  <li class="offer__item"><a href="#">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Product</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Sales Software</a></li>
+                  <li class="offer__item"><a href="#">Marketplace</a></li>
+                  <li class="offer__item">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="offer__item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Discover</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">CRM Comparision</a></li>
+                  <li class="offer__item"><a href="#">Partner Program</a></li>
+                  <li class="offer__item"><a href="#">What is CRM</a></li>
+                  <li class="offer__item"><a href="#">Resource</a></li>
+                </ul>
+              </li>
+
+              <li class="offer__item offer__item--has-children">
+                <h3>Help Center</h3>
+
+                <ul class="offer__sub-list">
+                  <li class="offer__item"><a href="#">Community</a></li>
+                  <li class="offer__item"><a href="#">Knowledge Base</a></li>
+                  <li class="offer__item"><a href="#">Academy</a></li>
+                  <li class="offer__item"><a href="#">Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">Facebook</span>
+
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">twitter</span>
+
+                <svg width="24" hidden="20">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="">
+                <span class="visually-hidden">instagram</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-item">
+              <a href="#">
+                <span class="visually-hidden">in</span>
+                <svg width="24" hidden="24">
+                  <use xlink:href="img/sprite.svg#social-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright-wrapper">
+        <ul class="page-footer__copyright-list">
+          <li class="page-footer__copyright-item">
+            <span>Privacy Policy</span>
+          </li>
+
+          <li class="page-footer__copyright-item">
+            <span>Terms & Conditions</span>
+          </li>
+
+          <li class="page-footer__copyright-item"><span>Support</span></li>
+        </ul>
+      </div>
+
+      <p class="page-footer__copyright">
+        © Copyright 2023, All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
