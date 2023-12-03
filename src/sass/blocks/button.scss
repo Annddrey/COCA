@@ -1,0 +1,19 @@
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  min-width: 94px;
+  padding: 12px 24px;
+  color: $font-light-color;
+  background-color: $button-dark-color;
+  border-radius: 100px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e8492;
+  }
+}

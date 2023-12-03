@@ -1,1 +1,6 @@
-@import "blocks/page-header.scss";
+@import "global/variables.scss";
+@import "global/normalize";
+@import "global/global.scss";
+
+// Blocks
+@import "blocks/button.scss";
