@@ -26,27 +26,27 @@
               alt="Логотип сайта"
             />
           </div>
+
+          <nav class="page-header__nav page-header__nav--closed">
+            <button class="page-header__button-nav" type="button">
+              <span class="visually-hidden">Включатель навигации</span>
+            </button>
+
+            <ul class="page-header__list">
+              <li class="page-header__item page-header__item--current">
+                <a href="">Home</a>
+              </li>
+              <li class="page-header__item"><a href="about.html">About</a></li>
+              <li class="page-header__item"><a href="blog.html">Blog</a></li>
+              <li class="page-header__item">
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="page-header__nav">
-          <button class="page-header__button-nav">
-            <span class="visually-hidden">Включатель навигации</span>
-          </button>
-
-          <ul class="page-header__list">
-            <li class="page-header__item page-header__item--current">
-              <a href="">Home</a>
-            </li>
-            <li class="page-header__item"><a href="about.html">About</a></li>
-            <li class="page-header__item"><a href="blog.html">Blog</a></li>
-            <li class="page-header__item">
-              <a href="pricing.html">Pricing</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -146,19 +146,19 @@
           <div class="promo__trends">
             <h3 class="visually-hidden">Trends</h3>
 
-            <p class="promo__trend">
+            <article class="promo__trend">
               <h4>Sales</h4>
               <span class="promo__profits">$31,092</span>
               <span class="promo__shift promo__shift--positive">4.2%</span>
               <span class="promo__annotation">from last year</span>
-            </p>
+            </article>
 
-            <p class="promo__trend">
+            <article class="promo__trend">
               <h4>Marketing</h4>
               <span class="promo__profits">$29,128</span>
               <span class="promo__shift promo__shift--negative">1.2%</span>
               <span class="promo__annotation">from last year</span>
-            </p>
+            </article>
           </div>
         </div>
       </section>
@@ -697,6 +697,6 @@
       </p>
     </footer>
 
-    <script src="main.min.js"></script>
+    <script src="js/main.min.js" type="module"></script>
   </body>
 </html>

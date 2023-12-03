@@ -1,0 +1,32 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.page-header__nav {
+}
+
+.page-header__list {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.page-header__nav--closed .page-header__list {
+  display: none;
+}
+
+.page-header__nav--opened .page-header__list {
+  display: block;
+}
