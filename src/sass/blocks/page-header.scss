@@ -117,7 +117,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 26px;
-    border-radius: 80px;
+    padding: 10px 16px;
+    border-radius: 100px;
 
     &:hover {
       color: $font-light-color;
