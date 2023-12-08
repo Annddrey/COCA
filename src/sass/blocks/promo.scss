@@ -1,0 +1,134 @@
+.promo {
+  padding: 10px 0;
+}
+
+.promo::before {
+  position: fixed;
+  content: "";
+  top: 11px;
+  left: -51px;
+  width: 228px;
+  height: 228px;
+  border-radius: 50%;
+  background-color: #fa7515;
+  opacity: 0.15;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.promo::after {
+  position: fixed;
+  content: "";
+  top: 203px;
+  right: -99px;
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  background-color: rgba(227, 247, 240, 0.9);
+  filter: blur(40px);
+  z-index: -1;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  line-height: 40px;
+}
+
+.promo__text {
+  position: relative;
+  padding-left: 32px;
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.promo__text::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 0;
+  width: 24px;
+  height: 1px;
+  background-color: $dark-background-color;
+}
+
+.promo__free-try-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 8px;
+  margin-bottom: 56px;
+  max-width: 400px;
+}
+
+.promo__input-email {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #7e8492;
+  background-color: $light-background-color;
+}
+
+.promo__input-email:focus {
+  outline: none;
+}
+
+.promo__statistics-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 370px;
+}
+
+.promo__chart {
+  box-shadow: 16.047px 32.094px 64.187px 0px rgba(89, 96, 135, 0.12);
+  padding: 16px;
+}
+
+.promo__title-statistics {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 24px;
+
+  &--mini {
+    font-size: 8px;
+    margin-bottom: 6px;
+    line-height: 16px;
+  }
+}
+
+.promo__chart-mini {
+  position: absolute;
+  top: 0;
+  right: -38px;
+  padding: 10px;
+  padding-right: 0;
+  background-color: inherit;
+  box-shadow: 11.11px 22.22px 44.44px 0px rgba(45, 51, 81, 0.12);
+}
+
+.promo__trends {
+  padding: 16px;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color: #000000;
+}
+
+.promo__trend h4 {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  color: #5c616f;
+}
+
+.promo__profits {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}

@@ -13,11 +13,19 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 25px 0;
 }
 
 .page-header__logo-wraper img {
   display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__button-nav {
@@ -97,6 +105,22 @@
   }
 }
 
+.page-header__item--current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 1px;
+      height: 2px;
+      background-color: $dark-background-color;
+    }
+  }
+}
+
 .page-header__nav--opened .page-header__item:hover {
   @media (max-width: $mobile-only-width) {
     background-color: $dark-background-color;
@@ -117,7 +141,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 26px;
-    padding: 10px 16px;
+    padding: 7px 16px;
     border-radius: 100px;
 
     &:hover {

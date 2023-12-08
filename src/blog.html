@@ -18,37 +18,40 @@
       <div class="wrapper">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wraper">
-            <img
-              class="page-header__logo"
-              width="112"
-              height="52"
-              src="img/logo.svg"
-              alt="Логотип сайта"
-            />
+            <a href="index.html">
+              <img
+                width="112"
+                height="52"
+                src="img/logo.svg"
+                alt="Логотип сайта"
+              />
+            </a>
           </div>
+
+          <nav class="page-header__nav page-header__nav--closed">
+            <button class="page-header__button-nav">
+              <span class="visually-hidden">Включатель навигации</span>
+            </button>
+
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="page-header__item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="page-header__item page-header__item--current">
+                <a href="">Blog</a>
+              </li>
+              <li class="page-header__item">
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="page-header__nav">
-          <button class="page-header__button-nav">
-            <span class="visually-hidden">Включатель навигации</span>
-          </button>
-
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="page-header__item page-header__item--current">
-              <a href="about.html">About</a>
-            </li>
-            <li class="page-header__item"><a href="">Blog</a></li>
-            <li class="page-header__item">
-              <a href="pricing.html">Pricing</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
