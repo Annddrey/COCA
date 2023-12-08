@@ -1,0 +1,56 @@
+.trends {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+  padding: 16px;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color: #000000;
+}
+
+.trends__trend {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  color: #5c616f;
+}
+
+.trends__trend h4 {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.trends__profits {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 21px;
+  margin-bottom: 6px;
+}
+
+.trends p {
+  display: block;
+  margin: 0;
+  line-height: 16px;
+  align-items: baseline;
+}
+
+.trends__trend--positive p {
+  color: #60d39c;
+}
+
+.trends__trend--negative p {
+  color: #e35454;
+}
+
+.trends p .trends__annotation {
+  margin-left: 5px;
+  color: #5c616f;
+  font-weight: 400;
+}
+
+.trends__trend--negative p svg {
+  transform: rotate(180deg);
+}
