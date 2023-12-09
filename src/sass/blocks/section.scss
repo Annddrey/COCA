@@ -1,0 +1,20 @@
+.section {
+  padding: 40px 0;
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.section__text {
+  color: $mini-font-color;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  margin: 0;
+  margin-bottom: 32px;
+}

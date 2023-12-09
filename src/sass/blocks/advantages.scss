@@ -1,0 +1,37 @@
+.advantages {
+  color: $font-light-color;
+  background-color: $dark-background-color;
+}
+
+.advantages__list {
+}
+
+.advantages__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24px auto auto;
+  row-gap: 16px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item img {
+  object-fit: none;
+}
+
+.advantages__item dt {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.advantages__item dd {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  color: $mini-font-color;
+  margin: 0;
+}
