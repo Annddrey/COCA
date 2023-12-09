@@ -1,32 +1,6 @@
 .promo {
+  position: relative;
   padding: 30px 0;
-}
-
-.promo::before {
-  position: fixed;
-  content: "";
-  top: 11px;
-  left: -51px;
-  width: 228px;
-  height: 228px;
-  border-radius: 50%;
-  background-color: #fa7515;
-  opacity: 0.15;
-  filter: blur(60px);
-  z-index: -1;
-}
-
-.promo::after {
-  position: fixed;
-  content: "";
-  top: 203px;
-  right: -99px;
-  width: 197px;
-  height: 197px;
-  border-radius: 50%;
-  background-color: rgba(227, 247, 240, 0.9);
-  filter: blur(40px);
-  z-index: -1;
 }
 
 .promo__title {
@@ -117,4 +91,32 @@
 
 .promo__trends {
   margin-bottom: 24px;
+}
+
+.promo__background-1,
+.promo__background-2,
+.promo__background-3 {
+  position: absolute;
+  z-index: -1;
+}
+
+.promo__background-1 {
+  top: -90px;
+  left: -50px;
+  color: #fa741529;
+}
+
+.promo__background-2,
+.promo__background-3 {
+  color: #e2f8f0;
+}
+
+.promo__background-2 {
+  top: 203px;
+  right: -99px;
+}
+
+.promo__background-3 {
+  bottom: 48px;
+  right: -83px;
 }
