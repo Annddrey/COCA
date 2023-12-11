@@ -6,6 +6,7 @@
   color: #ffffff;
   border-radius: 6px;
   background-color: #000000;
+  max-width: 400px;
 }
 
 .trends__trend {
@@ -35,6 +36,9 @@
   margin: 0;
   line-height: 16px;
   align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .trends__trend--positive p {

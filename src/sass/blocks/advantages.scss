@@ -3,6 +3,14 @@
   background-color: $dark-background-color;
 }
 
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
 .advantages__item {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,6 +20,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
