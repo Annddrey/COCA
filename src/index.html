@@ -72,110 +72,127 @@
         </div>
 
         <div class="wrapper">
-          <h1 class="promo__title">Digitally forward creative</h1>
+          <div class="promo__wrapper">
+            <h1 class="promo__title">Digitally forward creative</h1>
 
-          <p class="promo__text">
-            Our biggest challenge is making sure we're always designing and
-            building products that will help you run your business better.
-          </p>
+            <p class="promo__text">
+              Our biggest challenge is making sure we're always designing and
+              building products that will help you run your business better.
+            </p>
 
-          <form class="promo__free-try-form" action="#">
-            <span class="visually-hidden">free try</span>
-            <input
-              class="promo__input-email"
-              name="free-try-email"
-              id="free-try-email"
-              type="email"
-              placeholder="Enter your email"
-            />
-            <button class="button promo__submit" type="submit">
-              Try for free
-            </button>
-          </form>
+            <form class="promo__free-try-form" action="#">
+              <span class="visually-hidden">free try</span>
+              <input
+                class="promo__input-email"
+                name="free-try-email"
+                id="free-try-email"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button class="button promo__submit" type="submit">
+                Try for free
+              </button>
+            </form>
 
-          <div class="promo__statistics-wrapper">
-            <div class="promo__chart">
-              <h3 class="promo__title-statistics">Sales Report</h3>
+            <div class="promo__statistics">
+              <div class="promo__statistics-wrapper">
+                <div class="promo__chart">
+                  <h3 class="promo__title-statistics">Sales Report</h3>
 
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="img/graph-desktop.webp, img/graph-desktop@2x.webp 2x"
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/graph-mobail.webp, img/graph-mobail@2x.webp 2x"
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="img/graph-desktop.jpg, img/graph-desktop@2x.jpg 2x"
-                />
-                <img
-                  class="promo__chart-image"
-                  width="294"
-                  height="208"
-                  src="img/graph-mobail.jpg"
-                  srcset="img/graph-mobail@2x.jpg 2x"
-                  alt="График со статистикой"
-                />
-              </picture>
-            </div>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/graph-desktop.webp,
+                        img/graph-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/graph-mobail.webp,
+                        img/graph-mobail@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/graph-desktop.jpg,
+                        img/graph-desktop@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo__chart-image"
+                      width="294"
+                      height="208"
+                      src="img/graph-mobail.jpg"
+                      srcset="img/graph-mobail@2x.jpg 2x"
+                      alt="График со статистикой"
+                    />
+                  </picture>
+                </div>
 
-            <div class="promo__chart-mini">
-              <h3 class="promo__title-statistics promo__title-statistics--mini">
-                Customer Growth
-              </h3>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/graph-mini-desktop.webp,
-                    img/graph-mini-desktop@2x.webp 2x
-                  "
-                />
+                <div class="promo__chart-mini">
+                  <h3
+                    class="promo__title-statistics promo__title-statistics--mini"
+                  >
+                    Customer Growth
+                  </h3>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/graph-mini-desktop.webp,
+                        img/graph-mini-desktop@2x.webp 2x
+                      "
+                    />
 
-                <img
-                  class="promo__chart-growth-image"
-                  width="98.1"
-                  height="82.5"
-                  src="img/graph-mini-desktop.jpg"
-                  srcset="img/graph-mini-desktop@2x.jpg 2x"
-                  alt="График со статистикой"
-                />
-              </picture>
+                    <img
+                      class="promo__chart-growth-image"
+                      width="98.1"
+                      height="82.5"
+                      src="img/graph-mini-desktop.jpg"
+                      srcset="img/graph-mini-desktop@2x.jpg 2x"
+                      alt="График со статистикой"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <section class="promo__trends trends">
+                <h3 class="visually-hidden">Trends</h3>
+
+                <article class="trends__trend trends__trend--positive">
+                  <h4>Sales</h4>
+                  <span class="trends__profits">$31,092</span>
+                  <p>
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#arrow-trend"></use>
+                    </svg>
+                    <span class="trends__shift" aria-label="Growth by"
+                      >4.2%</span
+                    >
+                    <span class="trends__annotation">from last year</span>
+                  </p>
+                </article>
+
+                <article class="trends__trend trends__trend--negative">
+                  <h4>Marketing</h4>
+                  <span class="trends__profits">$29,128</span>
+                  <p>
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#arrow-trend"></use>
+                    </svg>
+                    <span class="trends__shift" aria-label="Dropped by">
+                      1.2%
+                    </span>
+                    <span class="trends__annotation">from last year</span>
+                  </p>
+                </article>
+              </section>
             </div>
           </div>
-
-          <section class="promo__trends trends">
-            <h3 class="visually-hidden">Trends</h3>
-
-            <article class="trends__trend trends__trend--positive">
-              <h4>Sales</h4>
-              <span class="trends__profits">$31,092</span>
-              <p>
-                <svg width="10" height="10">
-                  <use xlink:href="img/sprite.svg#arrow-trend"></use>
-                </svg>
-                <span class="trends__shift" aria-label="Growth by">4.2%</span>
-                <span class="trends__annotation">from last year</span>
-              </p>
-            </article>
-
-            <article class="trends__trend trends__trend--negative">
-              <h4>Marketing</h4>
-              <span class="trends__profits">$29,128</span>
-              <p>
-                <svg width="10" height="10">
-                  <use xlink:href="img/sprite.svg#arrow-trend"></use>
-                </svg>
-                <span class="trends__shift" aria-label="Dropped by">
-                  1.2%
-                </span>
-                <span class="trends__annotation">from last year</span>
-              </p>
-            </article>
-          </section>
         </div>
       </header>
 
