@@ -1,6 +1,10 @@
 .promo {
   position: relative;
   padding: 30px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 87px 0 135px;
+  }
 }
 
 .promo__wrapper {
@@ -25,6 +29,13 @@
     grid-row: 1 / 2;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 80px;
+    line-height: 120%;
+    max-width: none;
+    margin-bottom: 114px;
+  }
 }
 
 .promo__text {
@@ -42,6 +53,15 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    max-width: 528px;
+    padding-left: 100px;
+    margin-bottom: 70px;
+  }
 }
 
 .promo__text::before {
@@ -57,13 +77,18 @@
     top: 13px;
     width: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    width: 76px;
+  }
 }
 
 .promo__free-try-form {
   display: grid;
   grid-template-columns: 1fr auto;
   column-gap: 8px;
-  max-width: 450px;
+  max-width: 470px;
   margin: 0 auto 56px;
 
   @media (min-width: $tablet-width) {
@@ -71,6 +96,7 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin: 0;
+    column-gap: 16px;
   }
 }
 
@@ -82,6 +108,10 @@
   border: none;
   border-bottom: 1px solid #7e8492;
   background-color: $light-background-color;
+
+  @media (min-width: $desktop-width) {
+    min-width: 280px;
+  }
 }
 
 .promo__input-email:focus {
@@ -130,6 +160,11 @@
   background-color: inherit;
   border-radius: 4px;
   box-shadow: 11.11px 22.22px 44.44px 0px rgba(45, 51, 81, 0.12);
+
+  @media (min-width: $desktop-width) {
+    top: -50px;
+    padding: 17px;
+  }
 }
 
 .promo__trends {
