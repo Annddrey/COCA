@@ -3,7 +3,7 @@
 <circle cx="326.5" cy="402.5" r="275.5" fill="currentColor"/>
 </g>
 <defs>
-<filter id="filter0_f_8160_1038" x="-169" y="-93" width="991" height="991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter viewBox="0 0 822 898"  id="filter0_f_8160_1038" x="-169" y="-93" width="991" height="991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="110" result="effect1_foregroundBlur_8160_1038"/>

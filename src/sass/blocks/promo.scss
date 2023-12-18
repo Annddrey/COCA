@@ -13,6 +13,11 @@
     grid-template-columns: 1fr auto;
     column-gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 617px auto;
+    column-gap: 97px;
+  }
 }
 
 .promo__title {
@@ -35,6 +40,7 @@
     line-height: 120%;
     max-width: none;
     margin-bottom: 114px;
+    letter-spacing: -3px;
   }
 }
 
@@ -119,7 +125,11 @@
 }
 
 .promo__statistics {
+  display: flex;
+  flex-direction: column;
   @media (min-width: $tablet-width) {
+    justify-self: start;
+    align-self: end;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
   }
@@ -128,15 +138,23 @@
 .promo__statistics-wrapper {
   position: relative;
   background-color: #ffffff;
-  max-width: 370px;
   margin: 0 auto 24px;
   border-radius: 6px;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
 }
 
 .promo__chart {
-  box-shadow: 16.047px 32.094px 64.187px 0px rgba(89, 96, 135, 0.12);
   padding: 16px;
   border-radius: 6px;
+  box-shadow: 16.047px 32.094px 64.187px 0px rgba(89, 96, 135, 0.12);
+  align-self: center;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 8px;
+  }
 }
 
 .promo__title-statistics {
@@ -144,10 +162,26 @@
   margin-bottom: 20px;
   line-height: 24px;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+
   &--mini {
     font-size: 8px;
     margin-bottom: 6px;
     line-height: 16px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.promo__chart-image {
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    height: 260px;
   }
 }
 
@@ -163,7 +197,16 @@
 
   @media (min-width: $desktop-width) {
     top: -50px;
+    right: -136px;
     padding: 17px;
+    border-radius: 8px;
+  }
+}
+
+.promo__chart-growth-image {
+  @media (min-width: $desktop-width) {
+    width: 177px;
+    height: 148px;
   }
 }
 
@@ -186,6 +229,18 @@
   top: -90px;
   left: -50px;
   color: #fa741529;
+
+  @media (min-width: $tablet-width) {
+    top: -114px;
+    left: -50px;
+  }
+}
+
+.promo__background-1 svg {
+  @media (min-width: $tablet-width) {
+    width: 551px;
+    height: 551px;
+  }
 }
 
 .promo__background-2,
@@ -196,9 +251,26 @@
 .promo__background-2 {
   top: 101px;
   right: -99px;
+
+  @media (min-width: $tablet-width) {
+    top: 101px;
+    right: -99px;
+  }
+}
+
+.promo__background-2 svg {
+  @media (min-width: $tablet-width) {
+    width: 525px;
+    height: 525px;
+  }
 }
 
 .promo__background-3 {
   bottom: 48px;
   right: -83px;
+
+  @media (min-width: $tablet-width) {
+    top: 101px;
+    right: -99px;
+  }
 }
