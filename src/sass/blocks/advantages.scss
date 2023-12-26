@@ -1,14 +1,10 @@
 .advantages {
+  padding: 40px 0;
   color: $font-light-color;
   background-color: $dark-background-color;
-}
-
-.advantages__header {
-  max-width: 450px;
 
   @media (min-width: $desktop-width) {
-    max-width: 816px;
-    margin-bottom: 80px;
+    padding: 100px 0;
   }
 }
 

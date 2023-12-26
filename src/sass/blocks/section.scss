@@ -1,5 +1,15 @@
 .section {
-  padding: 40px 0;
+  padding: 56px 0;
+}
+
+.section__header {
+  max-width: 400px;
+  margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 816px;
+    margin-bottom: 80px;
+  }
 }
 
 .section__title {
@@ -22,6 +32,9 @@
   font-weight: 500;
   line-height: inherit;
   margin: 0;
-  margin-bottom: 32px;
   max-width: 660px;
+
+  &--features {
+    max-width: 360px;
+  }
 }

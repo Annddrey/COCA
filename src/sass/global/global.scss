@@ -36,11 +36,16 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 120px;
+    max-width: 1440px;
+    box-sizing: border-box;
   }
 }

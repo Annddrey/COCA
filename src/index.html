@@ -198,8 +198,8 @@
 
       <section class="section advantages">
         <div class="wrapper">
-          <div class="advantages__header">
-            <h2 class="section__title advantages__title">
+          <div class="section__header">
+            <h2 class="section__title">
               Sans help our client solve complex customer problems with date
               that does more.
             </h2>
@@ -292,54 +292,48 @@
 
       <section class="section features">
         <div class="wrapper">
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="
-                img/features-desktop.webp,
-                img/features-desktop@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              srcset="img/features-mobail.webp, img/features-mobail@2x.webp 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/features-desktop.jpg, img/features-desktop@2x.jpg 2x"
-            />
-            <img
-              class="features__image"
-              width="335"
-              height="374"
-              src="img/features-mobail.jpg"
-              srcset="img/features-mobail@2x.jpg 2x"
-              alt="Статистика"
-            />
-          </picture>
+          <div class="features__wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/features.webp, img/features@2x.webp 2x"
+              />
+              <img
+                class="features__image"
+                width="335"
+                height="374"
+                src="img/features.jpg"
+                srcset="img/features@2x.jpg 2x"
+                alt="Статистика"
+              />
+            </picture>
 
-          <h2 class="section__title features__title">
-            Passion to increase company revenue up to 85%
-          </h2>
+            <div class="features__content-wrapper">
+              <div class="section__header features__header">
+                <h2 class="section__title">
+                  Passion to increase company revenue up to 85%
+                </h2>
 
-          <p class="section__text features__text">
-            Automate your sales, marketing and service in one platform. Avoid
-            date leaks and enable consistent messaging
-          </p>
+                <p class="section__text section__text--features">
+                  Automate your sales, marketing and service in one platform.
+                  Avoid date leaks and enable consistent messaging
+                </p>
+              </div>
 
-          <ul class="features__list">
-            <li class="features__item">
-              Close more deals with single - page contact managment
-            </li>
-            <li class="features__item">
-              Enjoy one-click calling, call scripts and voicemail automation
-            </li>
-            <li class="features__item">
-              Take stages and milestones of your deals to keep the sales process
-              an track
-            </li>
-          </ul>
+              <ul class="features__list">
+                <li class="features__item">
+                  Close more deals with single - page contact managment
+                </li>
+                <li class="features__item">
+                  Enjoy one-click calling, call scripts and voicemail automation
+                </li>
+                <li class="features__item">
+                  Take stages and milestones of your deals to keep the sales
+                  process an track
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
