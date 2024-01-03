@@ -1,3 +1,10 @@
+.features {
+  padding: 56px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 0 94px;
+  }
+}
 .features__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -7,6 +14,14 @@
 }
 
 .features__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 585px;
     height: 651px;
@@ -59,4 +74,8 @@
   width: 24px;
   height: 24px;
   background-image: url(../img/list-marcer-features.svg);
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
 }
