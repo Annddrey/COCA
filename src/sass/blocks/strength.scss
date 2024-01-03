@@ -13,6 +13,16 @@
   row-gap: 16px;
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 130px;
+    row-gap: 0;
+    margin-bottom: 80px;
+  }
 }
 
 .strength__resault {
@@ -20,8 +30,8 @@
   display: grid;
   grid-template-rows: 42px 48px;
   grid-row-gap: 8px;
-  min-width: 160px;
-  max-width: 194px;
+  min-width: 143px;
+  max-width: 160px;
 
   &:nth-child(even)::before {
     content: "";
@@ -32,6 +42,22 @@
     width: 1px;
     background-color: #ced1d8;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 77px 64px;
+    min-width: 196px;
+    max-width: 199px;
+
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      bottom: 25px;
+      left: -72px;
+      width: 1px;
+      background-color: #ced1d8;
+    }
+  }
 }
 
 .strength__list-resaults dt {
@@ -40,6 +66,11 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 42px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 64px;
+    line-height: 76px;
+  }
 }
 
 .strength__list-resaults dd {
@@ -48,4 +79,53 @@
   line-height: 24px;
   margin: 0;
   color: $mini-font-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.strength img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.strength__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.strength__heading .section__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 772px;
+  }
+}
+
+.strength__heading .section__text {
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 50px;
+    min-width: 305px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 24px;
+    min-width: 421px;
+  }
 }
