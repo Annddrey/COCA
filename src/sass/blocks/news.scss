@@ -1,0 +1,27 @@
+.news {
+  position: relative;
+  padding-top: 0;
+}
+
+.news_cards-wrapper {
+  position: relative;
+  width: 100%;
+  left: -20px;
+  right: -20px;
+  height: 275px;
+}
+
+.news__container {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  left: 0;
+}
+
+.news__scroll-button {
+  position: absolute;
+}
+
+.news__item:not(:first-of-type) {
+  margin-left: 16px;
+}

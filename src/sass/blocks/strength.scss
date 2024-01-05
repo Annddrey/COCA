@@ -33,30 +33,42 @@
   min-width: 143px;
   max-width: 160px;
 
-  &:nth-child(even)::before {
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 77px 64px;
+    min-width: 196px;
+    max-width: 199px;
+  }
+}
+
+.strength__resault:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  bottom: 17px;
+  left: -16px;
+  width: 1px;
+  background-color: #ced1d8;
+}
+
+.strength__resault:not(:first-child)::before {
+  @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
     top: 17px;
     bottom: 17px;
-    left: -16px;
+    left: -27px;
     width: 1px;
     background-color: #ced1d8;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: 77px 64px;
-    min-width: 196px;
-    max-width: 199px;
-
-    &:not(:first-child)::before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      bottom: 25px;
-      left: -72px;
-      width: 1px;
-      background-color: #ced1d8;
-    }
+    content: "";
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: -72px;
+    width: 1px;
+    background-color: #ced1d8;
   }
 }
 
