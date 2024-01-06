@@ -1,25 +1,21 @@
 .news {
-  position: relative;
   padding-top: 0;
-}
-
-.news_cards-wrapper {
-  position: relative;
-  width: 100%;
-  left: -20px;
-  right: -20px;
-  height: 275px;
 }
 
 .news__container {
   position: relative;
   display: flex;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
   padding-left: 20px;
-  left: 0;
+  overflow-x: scroll;
+  box-sizing: border-box;
 }
 
 .news__scroll-button {
   position: absolute;
+  z-index: 2;
 }
 
 .news__item:not(:first-of-type) {
