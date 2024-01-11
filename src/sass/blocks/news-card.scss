@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 300px;
   row-gap: 8px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 582px;
+  }
 }
 
 .news-card__title {
@@ -13,14 +17,27 @@
     color: inherit;
     text-decoration: none;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 .news-card figure {
   margin: 0;
 }
 
-.news-card figure > img {
+.news-card figure img {
   display: block;
+  width: 299px;
+  height: 191px;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    width: 582px;
+    height: 332px;
+  }
 }
 
 .news-card figure > figcaption {
@@ -28,6 +45,13 @@
   display: flex;
   justify-content: space-between;
   color: $mini-font-color;
+  margin-top: 8px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
 }
 
 .news-card figure > figcaption > .news-card__author {
