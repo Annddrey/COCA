@@ -598,13 +598,15 @@
 
       <section class="section reviews">
         <div class="wrapper">
-          <h2 class="section__title reviews__title">
-            What our customer are saying
-          </h2>
-          <p class="section__text reviews__text">
-            We are trusted numerous companies from different business to meet
-            their needs
-          </p>
+          <div class="section__header reviews__header">
+            <h2 class="section__title reviews__title">
+              What our customer are saying
+            </h2>
+            <p class="section__text reviews__text">
+              We are trusted numerous companies from different business to meet
+              their needs
+            </p>
+          </div>
 
           <article class="reviews__review review">
             <div class="review__container-stars">
@@ -620,24 +622,41 @@
               website”
             </p>
 
-            <div class="review__user">
-              <img class="review__imgage" src="#" alt="Avatar" />
-              <p class="review__name">Renee Wells</p>
-              <p class="review__about">Product Designer, Quotient</p>
+            <div class="review__container">
+              <div class="review__author">
+                <img
+                  width="40"
+                  height="40"
+                  class="review__image"
+                  src="img/review-author.jpg"
+                  alt="Avatar"
+                />
+                <p class="review__name">Renee Wells</p>
+                <p class="review__about">Product Designer, Quotient</p>
+              </div>
+              <div class="forward-backward-buttons reviews__buttons">
+                <button
+                  class="forward-backward-buttons__button forward-backward-buttons__button--on-edge"
+                >
+                  <div>
+                    <span class="visually-hidden">Previous</span>
+                    <svg width="14.4" height="13.6">
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
+
+                <button class="forward-backward-buttons__button">
+                  <div>
+                    <span class="visually-hidden">next</span>
+                    <svg width="14.4" height="13.6">
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
           </article>
-
-          <div class="forward-backward-buttons reviews__buttons">
-            <button
-              class="forward-backward-buttons__button forward-backward-buttons__button--furthest"
-            >
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="forward-backward-buttons__button">
-              <span class="visually-hidden">next</span>
-            </button>
-          </div>
         </div>
       </section>
     </main>
