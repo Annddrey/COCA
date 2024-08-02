@@ -143,7 +143,7 @@ const copy = (done) => {
 
 const watcher = () => {
   gulp.watch(["src/sass/**/*.scss"], gulp.series(styles));
-  gulp.watch(["src/js/script.js"], gulp.series(scripts));
+  gulp.watch(["src/js/main.js"], gulp.series(scripts));
   gulp.watch(["src/*.html"], html).on("change", sync.reload);
 };
 

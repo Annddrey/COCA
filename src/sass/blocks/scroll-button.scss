@@ -1,0 +1,33 @@
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #dddddd;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+    background-color: #dddddd;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.scroll-button > img {
+  width: 16px;
+  height: 10px;
+  object-fit: contain;
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 20px;
+  }
+}

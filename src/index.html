@@ -18,54 +18,70 @@
       <div class="wrapper">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wraper">
-            <img
-              class="page-header__logo"
-              width="112"
-              height="52"
-              src="img/logo.svg"
-              alt="Логотип сайта"
-            />
+            <a href="">
+              <img
+                width="112"
+                height="52"
+                src="img/logo.svg"
+                alt="Логотип сайта"
+              />
+            </a>
           </div>
+
+          <nav class="page-header__nav page-header__nav--closed">
+            <button class="page-header__button-nav" type="button">
+              <span class="visually-hidden">Включатель навигации</span>
+            </button>
+
+            <ul class="page-header__list">
+              <li class="page-header__item page-header__item--current">
+                <a href="">Home</a>
+              </li>
+              <li class="page-header__item"><a href="about.html">About</a></li>
+              <li class="page-header__item"><a href="blog.html">Blog</a></li>
+              <li class="page-header__item">
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contact.html">Contact Us -></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="page-header__nav">
-          <button class="page-header__button-nav">
-            <span class="visually-hidden">Включатель навигации</span>
-          </button>
-
-          <ul class="page-header__list">
-            <li class="page-header__item page-header__item--current">
-              <a href="">Home</a>
-            </li>
-            <li class="page-header__item"><a href="about.html">About</a></li>
-            <li class="page-header__item"><a href="blog.html">Blog</a></li>
-            <li class="page-header__item">
-              <a href="pricing.html">Pricing</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Компания Coca.</h1>
-      <section class="section promo">
+      <header class="promo">
+        <div class="promo__background-1">
+          <svg width="228" height="228">
+            <use xlink:href="img/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+
+        <div class="promo__background-2">
+          <svg width="197" height="197">
+            <use xlink:href="img/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+
+        <div class="promo__background-3">
+          <svg width="310" height="310">
+            <use xlink:href="img/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+
         <div class="wrapper">
-          <h2 class="section__title promo__title">
-            Digitally forward creative
-          </h2>
+          <div class="promo__wrapper">
+            <h1 class="promo__title">Digitally forward creative</h1>
 
-          <p class="section__text promo__text">
-            Our biggest challenge is making sure we're always designing and
-            building products that will help you run your business better.
-          </p>
+            <p class="promo__text">
+              When it comes to interactive marketing, we've got you covered. Be
+              where the world is going
+            </p>
 
-          <div class="promo__free-try-wrapper">
             <form class="promo__free-try-form" action="#">
-              <span class="visually-hidden">Пробная версия</span>
+              <span class="visually-hidden">free try</span>
               <input
                 class="promo__input-email"
                 name="free-try-email"
@@ -73,111 +89,140 @@
                 type="email"
                 placeholder="Enter your email"
               />
-              <button class="promo__submit">Try for free</button>
+              <button class="button promo__submit" type="submit">
+                Try for free
+              </button>
             </form>
-          </div>
 
-          <div class="promo__statistics-wrapper">
-            <div class="promo__chart">
-              <h3 class="promo__title-statistics">Sales Report</h3>
+            <div class="promo__statistics">
+              <div class="promo__statistics-wrapper">
+                <div class="promo__chart">
+                  <h3 class="promo__title-statistics">Sales Report</h3>
 
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="img/graph-desktop.webp, img/graph-desktop@2x.webp 2x"
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/graph-mobail.webp, img/graph-mobail@2x.webp 2x"
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="img/graph-desktop.jpg, img/graph-desktop@2x.jpg 2x"
-                />
-                <img
-                  class="promo__chart-image"
-                  width="294"
-                  height="208"
-                  src="img/graph-mobail.jpg"
-                  srcset="img/graph-mobail@2x.jpg 2x"
-                  alt="График со статистикой"
-                />
-              </picture>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/graph-desktop.webp,
+                        img/graph-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/graph-mobail.webp,
+                        img/graph-mobail@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/graph-desktop.jpg,
+                        img/graph-desktop@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo__chart-image"
+                      width="294"
+                      height="208"
+                      src="img/graph-mobail.jpg"
+                      srcset="img/graph-mobail@2x.jpg 2x"
+                      alt="График со статистикой"
+                    />
+                  </picture>
+                </div>
+
+                <div class="promo__chart-mini">
+                  <h3
+                    class="promo__title-statistics promo__title-statistics--mini"
+                  >
+                    Customer Growth
+                  </h3>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/graph-mini-desktop.webp,
+                        img/graph-mini-desktop@2x.webp 2x
+                      "
+                    />
+
+                    <img
+                      class="promo__chart-growth-image"
+                      width="98.1"
+                      height="82.5"
+                      src="img/graph-mini-desktop.jpg"
+                      srcset="img/graph-mini-desktop@2x.jpg 2x"
+                      alt="График со статистикой"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <section class="promo__trends trends">
+                <h3 class="visually-hidden">Trends</h3>
+
+                <article class="trends__trend trends__trend--positive">
+                  <h4>Sales</h4>
+                  <span class="trends__profits">$31,092</span>
+                  <p>
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#arrow-trend"></use>
+                    </svg>
+                    <span class="trends__shift" aria-label="Growth by"
+                      >4.2%</span
+                    >
+                    <span class="trends__annotation">from last year</span>
+                  </p>
+                </article>
+
+                <article class="trends__trend trends__trend--negative">
+                  <h4>Marketing</h4>
+                  <span class="trends__profits">$29,128</span>
+                  <p>
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#arrow-trend"></use>
+                    </svg>
+                    <span class="trends__shift" aria-label="Dropped by">
+                      1.2%
+                    </span>
+                    <span class="trends__annotation">from last year</span>
+                  </p>
+                </article>
+              </section>
             </div>
-
-            <div class="promo__chart-mini">
-              <h3 class="promo__title-statistics">Customer Growth</h3>
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/graph-mini-desktop.webp,
-                    img/graph-mini-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/graph-mini-mobail.webp,
-                    img/graph-mini-mobail@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/graph-mini-desktop.jpg,
-                    img/graph-mini-desktop@2x.jpg 2x
-                  "
-                />
-                <img
-                  class="promo__chart-growth-image"
-                  width="98"
-                  height="82"
-                  src="img/graph-mini-mobail.jpg"
-                  srcset="img/graph-mini-mobail@2x.jpg 2x"
-                  alt="График со статистикой"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="promo__trends">
-            <h3 class="visually-hidden">Trends</h3>
-
-            <p class="promo__trend">
-              <h4>Sales</h4>
-              <span class="promo__profits">$31,092</span>
-              <span class="promo__shift promo__shift--positive">4.2%</span>
-              <span class="promo__annotation">from last year</span>
-            </p>
-
-            <p class="promo__trend">
-              <h4>Marketing</h4>
-              <span class="promo__profits">$29,128</span>
-              <span class="promo__shift promo__shift--negative">1.2%</span>
-              <span class="promo__annotation">from last year</span>
-            </p>
           </div>
         </div>
-      </section>
+      </header>
 
       <section class="section advantages">
         <div class="wrapper">
-          <h2 class="section__title advantages__title">
-            Sans help our client solve complex customer problems with date that
-            does more.
-          </h2>
-          <p class="section__text advantages__text">
-            Our platform offers the modern enterprise full control of how date
-            can be access and used with industry leading software solutions for
-            identity, activation, and date collaboration
-          </p>
+          <div class="section__header">
+            <h2 class="section__title">
+              Sans help our client solve complex customer problems with date
+              that does more.
+            </h2>
+            <p class="section__text">
+              Our platform offers the modern enterprise full control of how date
+              can be access and used with industry leading software solutions
+              for identity, activation, and date collaboration
+            </p>
+          </div>
 
           <dl class="advantages__list">
-            <div class="advantages__item advantages__item--one">
-              <dt>Build your date fundamental</dt>
+            <div class="advantages__item">
+              <img
+                width="24"
+                height="24"
+                src="img/advantages-1.svg"
+                aria-hidden="true"
+              />
+
+              <dt>
+                Build your date <br />
+                fundamental
+              </dt>
               <dd>
                 Build access to date, develop valuable business insights and
                 drive revenue while maintaining full control over access and use
@@ -185,8 +230,18 @@
               </dd>
             </div>
 
-            <div class="advantages__item advantages__item--two">
-              <dt>Measure more effective</dt>
+            <div class="advantages__item">
+              <img
+                width="24"
+                height="24"
+                src="img/advantages-2.svg"
+                aria-hidden="true"
+              />
+
+              <dt>
+                Measure more<br />
+                effective
+              </dt>
               <dd>
                 Effectively measure people-based campaigns with the freedom to
                 choose from best-of breed partners to optimize and drive media
@@ -194,8 +249,18 @@
               </dd>
             </div>
 
-            <div class="advantages__item advantages__item--three">
-              <dt>Activate your date</dt>
+            <div class="advantages__item">
+              <img
+                width="24"
+                height="24"
+                src="img/advantages-3.svg"
+                aria-hidden="true"
+              />
+
+              <dt>
+                Activate your<br />
+                date
+              </dt>
               <dd>
                 Accurately address your specific audiences at scale across any
                 channel, platform, publisher or network and safely translate
@@ -203,8 +268,18 @@
               </dd>
             </div>
 
-            <div class="advantages__item advantages__item--four">
-              <dt>Strengthen consumer privacy</dt>
+            <div class="advantages__item">
+              <img
+                width="24"
+                height="24"
+                src="img/advantages-4.svg"
+                aria-hidden="true"
+              />
+
+              <dt>
+                Strengthen<br />
+                consumer privacy
+              </dt>
               <dd>
                 Protect your customer date with leading privacy-preserving
                 technologies and advanced techniques to minimize date movement
@@ -217,58 +292,52 @@
 
       <section class="section features">
         <div class="wrapper">
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="
-                img/features-desktop.webp,
-                img/features-desktop@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              srcset="img/features-mobail.webp, img/features-mobail@2x.webp 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/features-desktop.jpg, img/features-desktop@2x.jpg 2x"
-            />
-            <img
-              class="features__image"
-              width="335"
-              height="374"
-              src="img/features-mobail.jpg"
-              srcset="img/features-mobail@2x.jpg 2x"
-              alt="Статистика"
-            />
-          </picture>
+          <div class="features__wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/features.webp, img/features@2x.webp 2x"
+              />
+              <img
+                class="features__image"
+                width="335"
+                height="374"
+                src="img/features.jpg"
+                srcset="img/features@2x.jpg 2x"
+                alt="Статистика"
+              />
+            </picture>
 
-          <h2 class="section__title features__title">
-            Passion to increase company revenue up to 85%
-          </h2>
+            <div class="features__content-wrapper">
+              <div class="section__header features__header">
+                <h2 class="section__title">
+                  Passion to increase company revenue up to 85%
+                </h2>
 
-          <p class="section__text features__text">
-            Automate your sales, marketing and service in one platform. Avoid
-            date leaks and enable consistent messaging
-          </p>
+                <p class="section__text section__text--features">
+                  Automate your sales, marketing and service in one platform.
+                  Avoid date leaks and enable consistent messaging
+                </p>
+              </div>
 
-          <ul class="features__list">
-            <li class="features__item">
-              Close more deals with single - page contact managment
-            </li>
-            <li class="features__item">
-              Enjoy one-click calling, call scripts and voicemail automation
-            </li>
-            <li class="features__item">
-              Take stages and milestones of your deals to keep the sales process
-              an track
-            </li>
-          </ul>
+              <ul class="features__list">
+                <li class="features__item">
+                  Close more deals with single - page contact managment
+                </li>
+                <li class="features__item">
+                  Enjoy one-click calling, call scripts and voicemail automation
+                </li>
+                <li class="features__item">
+                  Take stages and milestones of your deals to keep the sales
+                  process an track
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="strength">
+      <section class="section strength">
         <div class="wrapper">
           <h2 class="visually-hidden">Our strengths</h2>
 
@@ -297,232 +366,247 @@
           <picture>
             <source
               type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="
-                img/strength-desktop.webp,
-                img/strength-desktop@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              srcset="img/strength-mobail.webp, img/strength-mobail@2x.webp 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/strength-desktop.jpg, img/strength-desktop@2x.jpg 2x"
+              srcset="img/strength.webp, img/strength@2x.webp 2x"
             />
 
             <img
               width="335"
               height="162"
-              src="img/strength-mobail.jpg"
-              srcset="img/strength-mobail@2x.jpg 2x"
+              src="img/strength.jpg"
+              srcset="img/strength@2x.jpg 2x"
               alt=""
             />
           </picture>
 
-          <p class="section__title strength__title">
-            Lift your business to new heights with our digital marketing
-            services
-          </p>
+          <div class="section__header strength__heading">
+            <p class="section__title">
+              Lift your business to new heights with our digital marketing
+              services
+            </p>
 
-          <p class="section__text strength__text">
-            To build software that gives customer facing teams in small and
-            medium-sized businesses the ability to create rewarding and
-            long-lasting relationships with customers
-          </p>
+            <p class="section__text">
+              To build software that gives customer facing teams in small and
+              medium-sized businesses the ability to create rewarding and
+              long-lasting relationships with customers
+            </p>
+          </div>
         </div>
       </section>
 
       <article class="section partners">
         <div class="wrapper">
-          <h2 class="visually-hidden">Partners</h2>
-          <span class="prtners__heading">890+</span>
-          <p class="section__text">
-            some big companies that we work with, and trust us very much
-          </p>
+          <div class="partners__container">
+            <div class="partners__wrapper">
+              <h2 class="visually-hidden">Partners</h2>
+              <div class="partners__heading">
+                <span class="section__title partners__title">890+</span>
+                <p class="section__text partners__text">
+                  some big companies that we work with, and trust us very much
+                </p>
+              </div>
 
-          <ul class="partners__list">
-            <li class="partners__item">
-              <img
-                width="75.5"
-                height="23.35"
-                src="img/company-logo-airbnb.svg"
-                alt="logo airbnb"
-              />
-            </li>
+              <ul class="partners__list">
+                <li class="partners__item">
+                  <img
+                    width="75.5"
+                    height="23.35"
+                    src="img/company-logo-airbnb.svg"
+                    alt="logo airbnb"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="75.13"
-                height="23.33"
-                src="img/company-logo-amazon.svg"
-                alt="logo amazon"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="75.13"
+                    height="23.33"
+                    src="img/company-logo-amazon.svg"
+                    alt="logo amazon"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="73.44"
-                height="22"
-                src="img/company-logo-fedEx.svg"
-                alt="logo fedEx"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="73.44"
+                    height="22"
+                    src="img/company-logo-fedEx.svg"
+                    alt="logo fedEx"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="89"
-                height="19"
-                src="img/company-logo-microsoft.svg"
-                alt="logo microsoft"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="89"
+                    height="19"
+                    src="img/company-logo-microsoft.svg"
+                    alt="logo microsoft"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="61.42"
-                height="21.44"
-                src="img/company-logo-oyo.svg"
-                alt="logo OYO"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="61.42"
+                    height="21.44"
+                    src="img/company-logo-oyo.svg"
+                    alt="logo OYO"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="88.24"
-                height="20.42"
-                src="img/company-logo-walmart.svg"
-                alt="logo walmart"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="88.24"
+                    height="20.42"
+                    src="img/company-logo-walmart.svg"
+                    alt="logo walmart"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="69.85"
-                height="23.33"
-                src="img/company-logo-google.svg"
-                alt="logo google"
-              />
-            </li>
+                <li class="partners__item">
+                  <img
+                    width="69.85"
+                    height="23.33"
+                    src="img/company-logo-google.svg"
+                    alt="logo google"
+                  />
+                </li>
 
-            <li class="partners__item">
-              <img
-                width="71.48"
-                height="24.79"
-                src="img/company-logo-ola.svg"
-                alt="logo OLA"
-              />
-            </li>
-          </ul>
+                <li class="partners__item">
+                  <img
+                    width="71.48"
+                    height="24.79"
+                    src="img/company-logo-ola.svg"
+                    alt="logo OLA"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </article>
 
       <section class="section news">
-        <div class="wrappe">
-          <h2 class="section__title news__title">Trending news from Coca</h2>
-          <p class="section__text news__text">
-            we have some new Service to pamper you
-          </p>
+        <div class="wrapper">
+          <div class="section__header news__header">
+            <h2 class="section__title">Trending news from Coca</h2>
+            <p class="section__text">
+              we have some new Service to pamper you
+            </p>
+          </div>
 
-          <div class="news__container">
-            <button class="scroll-button news__scroll-button">
-              <span class="visually-hidden">Следующая новость</span>
-            </button>
+          <div class="news__wrapper">
+            <div class="news__container">
+              <button
+                class="button scroll-button news__scroll-button"
+                type="button"
+              >
+                <span class="visually-hidden">Следующая новость</span>
+                <img
+                  width="24"
+                  height="24"
+                  src="img/icon-news-button.svg"
+                  aria-hidden="true"
+                />
+              </button>
 
-            <article class="news__item news-card">
-              <h3 class="news-card__title">
-                What makes an authentic employee profile, and why does it
-                matter?
-              </h3>
+              <article class="news__item news-card">
+                <h3 class="news-card__title">
+                  <a href="#">
+                    What makes an authentic employee profile, and why does it
+                    matter?
+                  </a>
+                </h3>
 
-              <figure>
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1440px)"
-                    srcset="
-                      img/news-1-desktop.webp,
-                      img/news-1-desktopp@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/news-1-mobail.webp,
-                      img/news-1-mobail@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      img/news-1-desktop.jpg,
-                      img/news-1-desktop@2x.jpg 2x
-                    "
-                  />
+                <figure>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/news-1-desktop.webp,
+                        img/news-1-desktopp@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/news-1-mobail.webp,
+                        img/news-1-mobail@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/news-1-desktop.jpg,
+                        img/news-1-desktop@2x.jpg 2x
+                      "
+                    />
 
-                  <img
-                    width="299"
-                    height="190"
-                    src="img/news-1-mobail.jpg"
-                    srcset="img/news-1-mobail@2x.jpg 2x"
-                    alt=""
-                  />
-                </picture>
+                    <img
+                      width="299"
+                      height="190"
+                      src="img/news-1-mobail.jpg"
+                      srcset="img/news-1-mobail@2x.jpg 2x"
+                      alt=""
+                    />
+                  </picture>
 
-                <figcaption>
-                  <span class="news-card__data">
-                    Published in Insight Jan 30, 2021
-                  </span>
-                  <span class="news-card__author">by : Albert Sans</span>
-                </figcaption>
-              </figure>
-            </article>
+                  <figcaption>
+                    <span class="news-card__data">
+                      Published in Insight Jan 30, 2021
+                    </span>
+                    <span class="news-card__author">by : Albert Sans</span>
+                  </figcaption>
+                </figure>
+              </article>
 
-            <article class="news__item news-card">
-              <h3 class="news-card__title">
-                How to build a Kaylen relationship with a good company
-              </h3>
+              <article class="news__item news-card">
+                <h3 class="news-card__title">
+                  <a href="#">
+                    How to build a Kaylen relationship with a good company
+                  </a>
+                </h3>
 
-              <figure>
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/news-2-desktop.webp,
-                      img/news-2-desktop@2x.webp 2x
-                    "
-                  />
+                <figure>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/news-2-desktop.webp,
+                        img/news-2-desktop@2x.webp 2x
+                      "
+                    />
 
-                  <img
-                    width="299"
-                    height="190"
-                    src="img/news-2-desktop.jpg"
-                    srcset="img/news-2-desktop@2x.jpg 2x"
-                    alt=""
-                  />
-                </picture>
-                <figcaption>
-                  <span class="news-card__data">
-                    Published in Insight Jan 30, 2021
-                  </span>
-                  <span class="news-cards__author">by : Albert Sans</span>
-                </figcaption>
-              </figure>
-            </article>
+                    <img
+                      width="299"
+                      height="190"
+                      src="img/news-2-desktop.jpg"
+                      srcset="img/news-2-desktop@2x.jpg 2x"
+                      alt=""
+                    />
+                  </picture>
+                  <figcaption>
+                    <span class="news-card__data">
+                      Published in Insight Jan 30, 2021
+                    </span>
+                    <span class="news-cards__author">by : Albert Sans</span>
+                  </figcaption>
+                </figure>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section reviews">
         <div class="wrapper">
-          <h2 class="section__title reviews__title">
-            What our customer are saying
-          </h2>
-          <p class="section__text reviews__text">
-            We are trusted numerous companies from different business to meet
-            their needs
-          </p>
+          <div class="section__header reviews__header">
+            <h2 class="section__title reviews__title">
+              What our customer are saying
+            </h2>
+            <p class="section__text reviews__text">
+              We are trusted numerous companies from different business to meet
+              their needs
+            </p>
+          </div>
 
           <article class="reviews__review review">
             <div class="review__container-stars">
@@ -538,24 +622,41 @@
               website”
             </p>
 
-            <div class="review__user">
-              <img class="review__imgage" src="#" alt="Avatar" />
-              <p class="review__name">Renee Wells</p>
-              <p class="review__about">Product Designer, Quotient</p>
+            <div class="review__container">
+              <div class="review__author">
+                <img
+                  width="40"
+                  height="40"
+                  class="review__image"
+                  src="img/review-author.jpg"
+                  alt="Avatar"
+                />
+                <p class="review__name">Renee Wells</p>
+                <p class="review__about">Product Designer, Quotient</p>
+              </div>
+              <div class="forward-backward-buttons reviews__buttons">
+                <button
+                  class="forward-backward-buttons__button forward-backward-buttons__button--on-edge"
+                >
+                  <div>
+                    <span class="visually-hidden">Previous</span>
+                    <svg width="14.4" height="13.6">
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
+
+                <button class="forward-backward-buttons__button">
+                  <div>
+                    <span class="visually-hidden">next</span>
+                    <svg width="14.4" height="13.6">
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
           </article>
-
-          <div class="forward-backward-buttons reviews__buttons">
-            <button
-              class="forward-backward-buttons__button forward-backward-buttons__button--furthest"
-            >
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="forward-backward-buttons__button">
-              <span class="visually-hidden">next</span>
-            </button>
-          </div>
         </div>
       </section>
     </main>
@@ -641,7 +742,7 @@
               <a href="">
                 <span class="visually-hidden">Facebook</span>
 
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-facebook"></use>
                 </svg>
               </a>
@@ -651,7 +752,7 @@
               <a href="">
                 <span class="visually-hidden">twitter</span>
 
-                <svg width="24" hidden="20">
+                <svg width="24" height="20">
                   <use xlink:href="img/sprite.svg#social-twitter"></use>
                 </svg>
               </a>
@@ -660,7 +761,7 @@
             <li class="page-footer__social-item">
               <a href="">
                 <span class="visually-hidden">instagram</span>
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-instagram"></use>
                 </svg>
               </a>
@@ -669,7 +770,7 @@
             <li class="page-footer__social-item">
               <a href="#">
                 <span class="visually-hidden">in</span>
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-in"></use>
                 </svg>
               </a>
@@ -697,6 +798,6 @@
       </p>
     </footer>
 
-    <script src="main.min.js"></script>
+    <script src="js/main.min.js" type="module"></script>
   </body>
 </html>

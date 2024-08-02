@@ -1,0 +1,81 @@
+.features {
+  padding: 56px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 0 94px;
+  }
+}
+.features__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+  }
+}
+
+.features__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 585px;
+    height: 651px;
+  }
+}
+
+.features__content-wrapper {
+  max-width: 480px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin: auto 0;
+    max-width: none;
+  }
+}
+
+.features__header {
+  margin-bottom: 24px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  max-width: 393px;
+  list-style-type: none;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;
+  min-height: 40px;
+}
+
+.features__item:not(:last-child) {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;
+  min-height: 40px;
+  margin-bottom: 16px;
+}
+
+.features__item::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/list-marcer-features.svg);
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
+}

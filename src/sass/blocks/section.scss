@@ -1,0 +1,45 @@
+.section {
+  padding: 56px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 0;
+  }
+}
+
+.section__header {
+  max-width: 400px;
+  margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 816px;
+    margin-bottom: 80px;
+  }
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 56px;
+    line-height: 67px;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+  }
+}
+
+.section__text {
+  color: $mini-font-color;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  margin: 0;
+  max-width: 660px;
+
+  &--features {
+    max-width: 360px;
+  }
+}

@@ -18,37 +18,40 @@
       <div class="wrapper">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wraper">
-            <img
-              class="page-header__logo"
-              width="112"
-              height="52"
-              src="img/logo.svg"
-              alt="Логотип сайта"
-            />
+            <a href="index.html">
+              <img
+                width="112"
+                height="52"
+                src="img/logo.svg"
+                alt="Логотип сайта"
+              />
+            </a>
           </div>
+
+          <nav class="page-header__nav page-header__nav--closed">
+            <button class="page-header__button-nav">
+              <span class="visually-hidden">Включатель навигации</span>
+            </button>
+
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="page-header__item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="page-header__item page-header__item--current">
+                <a href="">Blog</a>
+              </li>
+              <li class="page-header__item">
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li class="page-header__item">
+                <a href="contact.html">Contact Us -></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="page-header__nav">
-          <button class="page-header__button-nav">
-            <span class="visually-hidden">Включатель навигации</span>
-          </button>
-
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="page-header__item page-header__item--current">
-              <a href="about.html">About</a>
-            </li>
-            <li class="page-header__item"><a href="">Blog</a></li>
-            <li class="page-header__item">
-              <a href="pricing.html">Pricing</a>
-            </li>
-            <li class="page-header__item">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -601,7 +604,7 @@
               <a href="">
                 <span class="visually-hidden">Facebook</span>
 
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-facebook"></use>
                 </svg>
               </a>
@@ -611,7 +614,7 @@
               <a href="">
                 <span class="visually-hidden">twitter</span>
 
-                <svg width="24" hidden="20">
+                <svg width="24" height="20">
                   <use xlink:href="img/sprite.svg#social-twitter"></use>
                 </svg>
               </a>
@@ -620,7 +623,7 @@
             <li class="page-footer__social-item">
               <a href="">
                 <span class="visually-hidden">instagram</span>
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-instagram"></use>
                 </svg>
               </a>
@@ -629,7 +632,7 @@
             <li class="page-footer__social-item">
               <a href="#">
                 <span class="visually-hidden">in</span>
-                <svg width="24" hidden="24">
+                <svg width="24" height="24">
                   <use xlink:href="img/sprite.svg#social-in"></use>
                 </svg>
               </a>
@@ -655,6 +658,8 @@
       <p class="page-footer__copyright">
         © Copyright 2023, All Rights Reserved
       </p>
+
+      <script src="js/main.min.js" type="module"></script>
     </footer>
   </body>
 </html>

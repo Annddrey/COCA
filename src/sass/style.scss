@@ -1,1 +1,20 @@
+@import "global/variables.scss";
+@import "global/normalize";
+@import "global/global.scss";
+
+// Blocks
+@import "blocks/button.scss";
+@import "blocks/scroll-button.scss";
+@import "blocks/section.scss";
 @import "blocks/page-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/trends.scss";
+@import "blocks/advantages.scss";
+@import "blocks/features.scss";
+@import "blocks/strength.scss";
+@import "blocks/partners.scss";
+@import "blocks/news.scss";
+@import "blocks/news-card.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/forward-backward-buttons.scss";

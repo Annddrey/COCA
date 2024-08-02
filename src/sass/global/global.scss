@@ -1,0 +1,51 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  padding-top: 75px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  overflow-x: hidden;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1000px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+    max-width: 1440px;
+    box-sizing: border-box;
+  }
+}

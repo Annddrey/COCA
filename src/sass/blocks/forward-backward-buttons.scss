@@ -1,0 +1,29 @@
+.forward-backward-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  width: 64px;
+}
+
+.forward-backward-buttons__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 0;
+  background-color: $dark-background-color;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.forward-backward-buttons__button--on-edge {
+  color: #ced1d8;
+  border: 1px solid #ced1d8;
+  background-color: #ffffff;
+
+  & svg {
+    transform: rotate(180deg);
+  }
+}
