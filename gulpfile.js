@@ -20,22 +20,21 @@ const del = require("del");
 
 const FTP = () => {
   const conn = ftp.create({
-    host:     '',
-    user:     '',
-    password: '',
+    host: "",
+    user: "",
+    password: "",
     parallel: 10,
     reload: true,
-    log: gutil.log
+    log: gutil.log,
   });
 
-  var globs = [
-    'build/**'
-  ];
+  var globs = ["build/**"];
 
-  return gulp.src( globs, { base: 'build/', buffer: false } )
-  .pipe( conn.newer( 'www/andreymescherinov.com/portfolio'))
-  .pipe( conn.dest( 'www/andreymescherinov.com/portfolio'));
-}
+  return gulp
+    .src(globs, { base: "build/", buffer: false })
+    .pipe(conn.newer("www/andreymescherinov.com/portfolio"))
+    .pipe(conn.dest("www/andreymescherinov.com/portfolio"));
+};
 
 exports.FTP = FTP;
 
@@ -98,7 +97,7 @@ const images = (done) => {
     .src("src/img/**/*.{png,jpg,svg}")
     .pipe(imagemin())
     .pipe(gulp.dest("build/img"));
-  done()
+  done();
 };
 
 exports.images = images;
@@ -183,6 +182,10 @@ const build = gulp.series(
 );
 
 exports.build = build;
+
+const delet = gulp.series(clean);
+
+exports.delet = delet;
 
 exports.default = gulp.series(
   clean,

@@ -8,7 +8,8 @@
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax sass",
     "lint`": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "delet": "gulp delet"
   },
   "author": "",
   "license": "ISC",
